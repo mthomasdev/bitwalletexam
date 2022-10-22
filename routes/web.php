@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\TickerController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/binance', [TickerController::class, 'getBinanceTickerPriceBySymbol']);
+Route::get('/bittrex', [TickerController::class, 'getBittrexTickerPriceBySymbol']);
+Route::get('/bestprice', [TickerController::class, 'getBestPrice']);

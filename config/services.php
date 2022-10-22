@@ -30,4 +30,20 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'binance' => [
+        'key'       =>  env('BINANCE_ACCESS_KEY', 'xxxxx'),
+        'secret'    =>  env('BINANCE_SECRET_KEY', 'xxxxx'),
+        'baseUrl'   =>  env('BINANCE_BASEURL', 'https://api.binance.com/api/v3/'),
+        'timeout'   =>  env('BINANCE_TIMEOUT', 10),
+    ],
+
+    'bittrex' => [
+        'key'       =>  env('BITTREX_ACCESS_KEY', 'xxxxx'),
+        'secret'    =>  env('BITTREX_ACCESS_KEY', 'xxxxx'),
+        'baseUrl'   =>  env('BINANCE_BASEURL', 'https://api.bittrex.com/v3/'),
+        'timeout'   =>  env('BINANCE_TIMEOUT', 10),
+    ],
+
+    
+
 ];
